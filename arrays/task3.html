@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h3>Printing given arrays in ascending order</h3>
+    <script>
+         
+
+var a=[2,4,17,12,10]
+var b=[]
+for(i=0;i<a.length;i++){
+  for(j=0;j<a.length;j++){
+    if(a[i]<a[j]){
+     b=a[i]
+      a[i]=a[j]
+      a[j]=b
+      
+    }
+  }
+}
+document.write("[2,4,17,12,10] = "+a)
+console.log(a)
+    </script>
+</body>
+</html>

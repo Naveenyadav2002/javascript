@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>print sum of the duplicate values</h3>
+
+    <script>
+        
+
+
+var a=[9,4,2,3,3,4]
+document.write("a=[9,4,2,3,3,4]"+"<br>"+"<br>")
+sum=0
+b=[]
+for(i of a){
+  if(!b.includes(i)){
+    b.push(i)
+  }
+}
+
+for(i=0;i<b.length;i++){
+  c=0
+  for(j=0;j<a.length;j++){
+    if(b[i]==a[j]){
+      c=c+1
+    }
+  }
+    
+  if(c>1){
+    document.write(b[i])
+    console.log(b[i])
+   sum=sum+b[i]
+  }
+}
+document.write("Sum of the duplicate values is "+sum)
+console.log("Sum of the duplicate values is "+sum)
+    </script>
+</body>
+</html>
