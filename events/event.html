@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+var a=document.createElement("button")
+document.body.appendChild(a)
+a.innerText="on click"
+
+a.addEventListener("click",hello)
+
+c=0
+function hello() {
+   
+    // alert("hello"+c)
+    var b=document.createElement("h1")
+document.body.appendChild(b)
+c++
+b.innerText="Hii I am Naveen"+c
+
+
+}
+
+
+
+
+    </script>
+</body>
+</html>
