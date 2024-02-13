@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+            
+ <h3>Given a string, create a function to reverse the case. All lower-cased letters should be upper-cased, and vice versa.<br>
+ Example: reverseCase("Happy Birthday") ➞ "hAPPY bIRTHDAY".Using Function</h3>
+
+    <script>
+
+
+
+               function vice_versa(){
+                        var a=" Happy Birthday"
+                            b=""
+                            c=""
+                      for(i=0;i<a.length;i++){
+                                 if(a.charCodeAt(i)>=65 && a.charCodeAt(i)<=90){
+                                    b=a[i].toLowerCase()
+                        }
+                       else{b=a[i].toUpperCase()}
+     
+                          c=c+b
+                       }
+                          return c;
+                   }
+                   document.write(" Happy Birthday = "+vice_versa())
+                   console.log(vice_versa())
+ 
+    </script>
+</body>
+</html>
