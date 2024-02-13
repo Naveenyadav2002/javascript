@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <style>
+        table,td,th {
+            border: 2px solid black;
+            border-collapse: collapse;
+            width:500px
+        }
+     </style>
+</head>
+<body>
+    <!-- <h1>Naveen</h1> -->
+    <script>
+
+
+debugger;
+var a=[
+    {"title":"S.NO",
+        "s.no":1,
+        "QUALIFICATION":"SSC",
+        "GPA":8.8
+    },
+    {"title":"QUALIFICATION",
+        "s.no":2,
+        "QUALIFICATION":"INTERMEDIATE(MPC)",
+        "GPA":8.73
+    },
+    {"title":"GPA",
+        "s.no":3,
+        "QUALIFICATION":"DEGREE(MPC)",
+        "GPA":8.8
+    }
+]
+
+var h=document.createElement("h1")
+document.body.appendChild(h)
+h.innerText="NAVEEN"
+h.style.textAlign="center"
+h.style.textShadow="10px"
+// h.style.border="2px solid "
+h.style.backgroundColor="grey"
+
+var imgg=document.createElement("img")
+document.body.appendChild(imgg)
+imgg.setAttribute("src","./nav.jpg")
+imgg.style.width="120px"
+imgg.style.float="right"
+imgg.style.marginTop="-80px"
+// imgg.style.marginLeft="100px"
+
+var rr=document.createElement("hr")
+document.body.appendChild(rr)
+rr.style.height="5px"
+rr.style.marginTop="50px"
+rr.style.backgroundColor="black"
+
+
+
+var fe=document.createElement("fieldset")
+document.body.appendChild(fe)
+// fe.style.marginTop="100px"
+
+var leg=document.createElement("legend")
+fe.appendChild(leg)
+
+var hh=document.createElement("h2")
+leg.appendChild(hh)
+hh.innerText="Career Objectives"
+hh.style.color="red"
+var pp=document.createElement("p")
+fe.appendChild(pp)
+pp.innerText="To Work in an organization which provides me with ample opportunities to enhance my skills and knowledge along with contributing to the growth of the organization"
+
+
+var fe=document.createElement("fieldset")
+document.body.appendChild(fe)
+// fe.style.marginTop="100px"
+
+var leg=document.createElement("legend")
+fe.appendChild(leg)
+
+var hh=document.createElement("h2")
+leg.appendChild(hh)
+hh.innerText="EDUCATION"
+hh.style.color="red"
+
+var tab=document.createElement("table");
+fe.appendChild(tab)
+
+var trr=document.createElement("tr");
+tab.appendChild(trr)
+var th1=document.createElement("th")
+trr.appendChild(th1)
+th1.innerText=a[0]["title"]
+
+// var trr=document.createElement("tr");
+var th2=document.createElement("th")
+trr.appendChild(th2)
+th2.innerText=a[1]["title"]
+
+// var trr=document.createElement("tr");
+var th3=document.createElement("th")
+trr.appendChild(th3)
+th3.innerText=a[2]["title"]
+
+for(i=0;i<a.length;i++){
+
+
+var trr=document.createElement("tr");
+// var th1=document.createElement("th")
+  var td1=document.createElement("td");
+  var td2=document.createElement("td");
+  var td3=document.createElement("td");
+
+  
+  tab.appendChild(trr)
+//   trr.appendChild(th1)
+  trr.appendChild(td1)
+  trr.appendChild(td2)
+  trr.appendChild(td3)
+
+//   th1.innerText=a[i]["title"]
+  td1.innerText=a[i]["s.no"]
+  td1.style.textAlign="center"
+  td2.innerText=a[i]["QUALIFICATION"]
+  td3.innerText=a[i]["GPA"]
+  td3.style.textAlign="center"
+}
+
+
+var fe=document.createElement("fieldset")
+document.body.appendChild(fe)
+// fe.style.marginTop="100px"
+
+var leg=document.createElement("legend")
+fe.appendChild(leg)
+
+var hh=document.createElement("h2")
+leg.appendChild(hh)
+hh.innerText="HOBBIES"
+hh.style.color="green"
+
+
+
+var u=document.createElement("ul")
+fe.appendChild(u)
+
+l1=document.createElement("li")
+l1.innerText="READING BOOKS"
+l2=document.createElement('li')
+l2.innerText="WATCHING MOVIES"
+l3=document.createElement("li")
+l3.innerText="PLAYING CRICKET"
+
+u.appendChild(l1)
+u.appendChild(l2)
+u.appendChild(l3)
+
+
+var fe=document.createElement("fieldset")
+document.body.appendChild(fe)
+// fe.style.marginTop="100px"
+
+var leg=document.createElement("legend")
+fe.appendChild(leg)
+
+
+var hhh=document.createElement("h2")
+leg.appendChild(hhh)
+hhh.innerText="STRENGTHS"
+hhh.style.color="chocolate"
+
+var u=document.createElement("ul")
+fe.appendChild(u)
+
+l1=document.createElement("li")
+l1.innerText="ADAPTIVE"
+l2=document.createElement('li')
+l2.innerText="QUICKLEARNER"
+l3=document.createElement("li")
+l3.innerText="CONFIDENT"
+
+u.appendChild(l1)
+u.appendChild(l2)
+u.appendChild(l3)
+
+var fe=document.createElement("fieldset")
+document.body.appendChild(fe)
+// fe.style.marginTop="100px"
+
+var leg=document.createElement("legend")
+fe.appendChild(leg)
+
+
+var hhh=document.createElement("h2")
+leg.appendChild(hhh)
+hhh.innerText="LANGUAGES"
+hhh.style.color=""
+
+var u=document.createElement("ol")
+fe.appendChild(u)
+
+l1=document.createElement("li")
+l1.innerText="HTML"
+l2=document.createElement('li')
+l2.innerText="CSS"
+l3=document.createElement("li")
+l3.innerText="JAVASCRIPT"
+
+u.appendChild(l1)
+u.appendChild(l2)
+u.appendChild(l3)
+
+var fe=document.createElement("fieldset")
+document.body.appendChild(fe)
+// fe.style.marginTop="100px"
+
+var leg=document.createElement("legend")
+fe.appendChild(leg)
+
+
+var hhh=document.createElement("h2")
+leg.appendChild(hhh)
+hhh.innerText="DECLARATION"
+hhh.style.color="brown"
+
+var pp=document.createElement("p")
+fe.appendChild(pp)
+pp.innerText="I HERE BY, THAT THE ABOVE INFORMATION IS TRUE"
+
+var sign=document.createElement("h2")
+document.body.appendChild(sign)
+sign.innerText="signature:"
+sign.style.display="inline-block"
+
+
+
+
+var imgg=document.createElement("img")
+document.body.appendChild(imgg)
+imgg.setAttribute("src","./sign.jpg")
+imgg.style.width="200px"
+imgg.style.marginLeft="10px"
+imgg.style.marginTop="50px"
+
+
+    </script>
+</body>
+</html>
